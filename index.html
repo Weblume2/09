@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leigh Plumbers (PTY) LTD | Kloof's Trusted Plumbers</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Top Bar - Contact Info -->
+    <div class="bg-[#1F3B5A] text-white py-2 px-4 text-xs md:text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span class="flex items-center gap-2"><i data-lucide="phone" class="w-3.5 h-3.5 text-[#FF7F11]"></i> 079 886 0254</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5 text-[#FF7F11]"></i> info@leighplumbers.co.za</span>
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#FF7F11]"></i> Kloof, KZN</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-[#FF7F11]"></i>
+                <span>Mon–Fri 08:00–17:00 | Sat 09:00–13:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div id="logo-text" class="text-2xl font-bold tracking-tight text-[#1F3B5A] md:text-white transition-colors duration-300">
+                    LEIGH<span class="text-[#FF7F11]">PLUMBERS</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link font-medium text-white hover:text-[#FF7F11] transition-colors">Home</a>
+                    <a href="#about" class="nav-link font-medium text-white hover:text-[#FF7F11] transition-colors">About</a>
+                    <a href="#services" class="nav-link font-medium text-white hover:text-[#FF7F11] transition-colors">Services</a>
+                    <a href="#reviews" class="nav-link font-medium text-white hover:text-[#FF7F11] transition-colors">Reviews</a>
+                    <a href="#contact" class="nav-link font-medium text-white hover:text-[#FF7F11] transition-colors">Contact</a>
+                    
+                    <a href="#contact" class="bg-[#FF7F11] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#e6720f] transition transform hover:scale-105">
+                        Get a Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-[#1F3B5A]">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute top-full left-0 w-full px-4 py-6 flex flex-col space-y-4">
+            <a href="#home" class="mobile-link text-lg font-medium text-[#1F3B5A] border-b border-gray-100 pb-2">Home</a>
+            <a href="#about" class="mobile-link text-lg font-medium text-[#1F3B5A] border-b border-gray-100 pb-2">About</a>
+            <a href="#services" class="mobile-link text-lg font-medium text-[#1F3B5A] border-b border-gray-100 pb-2">Services</a>
+            <a href="#reviews" class="mobile-link text-lg font-medium text-[#1F3B5A] border-b border-gray-100 pb-2">Reviews</a>
+            <a href="#contact" class="mobile-link text-lg font-medium text-[#1F3B5A] border-b border-gray-100 pb-2">Contact</a>
+            <a href="tel:0798860254" class="bg-[#FF7F11] text-white text-center py-3 rounded-md font-bold mt-4">
+                Call Now: 079 886 0254
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[85vh] flex items-center bg-gray-900 overflow-hidden">
+        <!-- Background Image Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80&w=2000" alt="Professional Plumber" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1F3B5A] to-transparent opacity-90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-[#FF7F11] bg-opacity-20 border border-[#FF7F11] px-3 py-1 rounded-full text-[#FF7F11] text-sm font-semibold mb-6">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i> Rated 5.0 Stars in Kloof
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    Kloof’s Trusted <br/>
+                    <span class="text-[#FF7F11]">Plumbing Experts.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                    Fast, reliable, and professional. From emergency leaks to geyser installations, Roger and the team deliver quality workmanship you can count on.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-[#FF7F11] text-white px-8 py-4 rounded-md font-bold text-center hover:bg-[#e6720f] transition shadow-lg flex items-center justify-center gap-2">
+                        Request a Service <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="tel:0798860254" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-bold text-center hover:bg-white hover:text-[#1F3B5A] transition flex items-center justify-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-gray-100 py-6 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="flex items-center justify-center gap-2 text-[#1F3B5A] font-semibold">
+                <i data-lucide="shield" class="text-[#FF7F11] w-5 h-5"></i> Licensed & Insured
+            </div>
+            <div class="flex items-center justify-center gap-2 text-[#1F3B5A] font-semibold">
+                <i data-lucide="clock" class="text-[#FF7F11] w-5 h-5"></i> Same-Day Service
+            </div>
+            <div class="flex items-center justify-center gap-2 text-[#1F3B5A] font-semibold">
+                <i data-lucide="star" class="text-[#FF7F11] w-5 h-5"></i> 5-Star Rated
+            </div>
+            <div class="flex items-center justify-center gap-2 text-[#1F3B5A] font-semibold">
+                <i data-lucide="check-circle" class="text-[#FF7F11] w-5 h-5"></i> Work Guaranteed
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800" alt="Plumbing Team" class="rounded-lg shadow-xl z-10 relative">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#FF7F11] rounded-lg -z-0 hidden md:block"></div>
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#1F3B5A] rounded-lg -z-0 hidden md:block"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h4 class="text-[#FF7F11] font-bold uppercase tracking-wider mb-2">About Leigh Plumbers</h4>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1F3B5A] mb-6">Serving Kloof with Integrity & Skill</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Founded by Roger, Leigh Plumbers (PTY) LTD has become a household name in Forest Hills and the greater Kloof area. We believe that plumbing shouldn't be a hassle. That's why we focus on three core values: Speed, Reliability, and Neatness.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Whether it's a burst geyser in the middle of the night or a routine maintenance check, our team arrives on time, equipped with the right tools, and doesn't leave until the job is done right.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-[#1F3B5A]">
+                            <h5 class="font-bold text-[#1F3B5A]">Local Experts</h5>
+                            <p class="text-sm text-gray-500">Based in Forest Hills, serving you fast.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-[#FF7F11]">
+                            <h5 class="font-bold text-[#1F3B5A]">Quality Parts</h5>
+                            <p class="text-sm text-gray-500">We use only SABS approved materials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1F3B5A] mb-4">Our Premium Services</h2>
+                <p class="text-gray-600">Comprehensive plumbing solutions tailored for residential and commercial properties in KwaZulu-Natal.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="mb-6 bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center group-hover:bg-[#1F3B5A] group-hover:text-white transition duration-300">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-[#FF7F11]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1F3B5A] mb-3">Geyser Installation</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Fast, same-day service for all geyser types. We handle replacements, thermostat faults, and burst geysers.</p>
+                    <a href="#contact" class="text-[#FF7F11] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        Request Service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="mb-6 bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center group-hover:bg-[#1F3B5A] group-hover:text-white transition duration-300">
+                        <i data-lucide="droplet" class="w-8 h-8 text-[#FF7F11]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1F3B5A] mb-3">Leak Detection</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Identify hidden leaks in walls or underground and fix them efficiently to save you water and money.</p>
+                    <a href="#contact" class="text-[#FF7F11] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        Request Service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="mb-6 bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center group-hover:bg-[#1F3B5A] group-hover:text-white transition duration-300">
+                        <i data-lucide="wrench" class="w-8 h-8 text-[#FF7F11]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1F3B5A] mb-3">Blocked Drains</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Safe, effective cleaning solutions for homes & businesses. We clear blockages quickly.</p>
+                    <a href="#contact" class="text-[#FF7F11] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        Request Service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="mb-6 bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center group-hover:bg-[#1F3B5A] group-hover:text-white transition duration-300">
+                        <i data-lucide="clock" class="w-8 h-8 text-[#FF7F11]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1F3B5A] mb-3">Emergency Plumbing</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">24/7 rapid response for urgent plumbing disasters. We are just a phone call away.</p>
+                    <a href="#contact" class="text-[#FF7F11] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        Request Service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Need something else? We also do bathroom renovations and water harvesting.</p>
+                <a href="#contact" class="inline-block bg-[#1F3B5A] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#2c527a] transition">
+                    View Full Service List
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="py-20 bg-[#1F3B5A] text-white relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 p-12 opacity-10">
+            <i data-lucide="wrench" class="w-48 h-48"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">What Our Clients Say</h2>
+                    <p class="text-blue-200">Rated 5.0 Stars on Google by our local community.</p>
+                </div>
+                <a href="https://google.com" target="_blank" rel="noreferrer" class="text-[#FF7F11] hover:text-white transition mt-4 md:mt-0 underline">Read all 9 reviews</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex text-[#FF7F11] mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="italic text-lg mb-6">"Outstanding service received from Roger and his team. Geyser issues repaired in 2.5 hours. Neat, tidy, and professional."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-[#1F3B5A]">DM</div>
+                        <div>
+                            <h5 class="font-bold">Dean M</h5>
+                            <p class="text-xs text-gray-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex text-[#FF7F11] mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="italic text-lg mb-6">"Very neat work, tidy up afterwards, reliable and pleasant. Highly recommend Leigh Plumbers for any household issues."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-[#1F3B5A]">S</div>
+                        <div>
+                            <h5 class="font-bold">Sums</h5>
+                            <p class="text-xs text-gray-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / CTA Strip -->
+    <section class="py-0">
+        <div class="grid grid-cols-2 md:grid-cols-4 h-48 md:h-64">
+           <img src="https://images.unsplash.com/photo-1584622050111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Plumbing Work" class="w-full h-full object-cover">
+           <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=600" alt="Sink Repair" class="w-full h-full object-cover">
+           <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&q=80&w=600" alt="Pipes" class="w-full h-full object-cover">
+           <div class="bg-[#FF7F11] flex flex-col items-center justify-center text-white p-6 text-center">
+              <h3 class="text-xl font-bold mb-2">See Our Work</h3>
+              <p class="text-sm mb-4">Browse our project gallery</p>
+              <i data-lucide="arrow-right" class="w-6 h-6"></i>
+           </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+                
+                <!-- Contact Form -->
+                <div class="p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-[#1F3B5A] mb-2">Get Your Free Quote</h2>
+                    <p class="text-gray-600 mb-8">Fill in the form below and we will get back to you within the hour.</p>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FF7F11] focus:border-transparent outline-none transition" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FF7F11] focus:border-transparent outline-none transition" placeholder="079 000 0000">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FF7F11] focus:border-transparent outline-none transition" placeholder="you@email.com">
+                        </div>
+                        <div>
+                           <label class="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
+                           <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FF7F11] focus:border-transparent outline-none transition bg-white">
+                              <option>General Plumbing</option>
+                              <option>Geyser Repair/Install</option>
+                              <option>Blocked Drain</option>
+                              <option>Leak Detection</option>
+                              <option>Emergency</option>
+                           </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FF7F11] focus:border-transparent outline-none transition" placeholder="Describe your issue..."></textarea>
+                        </div>
+                        
+                        <button id="submitBtn" type="submit" class="w-full py-4 rounded-lg font-bold text-white transition transform hover:scale-[1.02] bg-[#1F3B5A] hover:bg-[#2c527a]">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info & Map Side -->
+                <div class="bg-[#1F3B5A] p-8 md:p-12 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact Info</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-[#FF7F11] p-2 rounded-lg"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+                                <div>
+                                    <h5 class="font-bold">Address</h5>
+                                    <p class="text-blue-200">9A Sherwood Dr, Forest Hills,<br/>Kloof, 3610, KZN</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-[#FF7F11] p-2 rounded-lg"><i data-lucide="phone" class="w-6 h-6"></i></div>
+                                <div>
+                                    <h5 class="font-bold">Phone</h5>
+                                    <p class="text-blue-200">079 886 0254</p>
+                                    <p class="text-xs text-blue-300 mt-1">Available on WhatsApp</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-[#FF7F11] p-2 rounded-lg"><i data-lucide="mail" class="w-6 h-6"></i></div>
+                                <div>
+                                    <h5 class="font-bold">Email</h5>
+                                    <p class="text-blue-200">info@leighplumbers.co.za</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <div class="w-full h-48 bg-gray-300 rounded-lg overflow-hidden relative">
+                            <!-- Placeholder for map -->
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover opacity-80" alt="Map Location">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                               <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="map-pin" class="text-[#FF7F11]"></i> Serving Kloof Area</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-bold text-white mb-4">LEIGH<span class="text-[#FF7F11]">PLUMBERS</span></h2>
+                    <p class="mb-4 max-w-sm">
+                        Professional, reliable, and fast plumbing services in Kloof and surrounding areas. We take pride in our neat work and happy customers.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-[#FF7F11] transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-[#FF7F11] transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-[#FF7F11] transition">Services</a></li>
+                        <li><a href="#contact" class="hover:text-[#FF7F11] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Operating Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between"><span>Mon - Fri:</span> <span>08:00 - 17:00</span></li>
+                        <li class="flex justify-between"><span>Saturday:</span> <span>09:00 - 13:00</span></li>
+                        <li class="flex justify-between text-[#FF7F11]"><span>Sunday:</span> <span>Emergency Only</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; <span id="year"></span> Leigh Plumbers (PTY) LTD. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for High Performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button (Mobile Only) -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="tel:0798860254" class="bg-[#FF7F11] text-white p-4 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
+            <i data-lucide="phone" class="w-6 h-6 fill-current"></i>
+        </a>
+    </div>
+
+    <!-- Scripts for Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Update Copyright Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const mobileMenuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon X / Menu logic could be added here, simplified for now
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        const logoText = document.getElementById('logo-text');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuBtn = document.getElementById('mobile-menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('bg-transparent', 'py-4');
+                navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+                
+                logoText.classList.remove('md:text-white');
+                logoText.classList.add('text-[#1F3B5A]');
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-gray-700');
+                });
+
+                menuBtn.classList.remove('md:text-white');
+                menuBtn.classList.add('text-[#1F3B5A]');
+
+            } else {
+                navbar.classList.add('bg-transparent', 'py-4');
+                navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+                
+                logoText.classList.add('md:text-white');
+                logoText.classList.remove('text-[#1F3B5A]');
+
+                navLinks.forEach(link => {
+                    link.classList.add('text-white');
+                    link.classList.remove('text-gray-700');
+                });
+                
+                menuBtn.classList.add('md:text-white');
+                menuBtn.classList.remove('text-[#1F3B5A]');
+            }
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.classList.remove('bg-[#1F3B5A]', 'hover:bg-[#2c527a]');
+            submitBtn.classList.add('bg-gray-500');
+
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                submitBtn.classList.remove('bg-gray-500');
+                submitBtn.classList.add('bg-green-600');
+                
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.textContent = 'Send Request';
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-green-600');
+                    submitBtn.classList.add('bg-[#1F3B5A]', 'hover:bg-[#2c527a]');
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
